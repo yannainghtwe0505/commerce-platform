@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: commerce-platform
+
+  datasource:
+    url: jdbc:postgresql://${VM_DB_HOST:192.168.1.50}:5432/commerce_db
+    username: ${VM_DB_USERNAME:commerce_user}
+    password: ${VM_DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
